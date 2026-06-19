@@ -1,0 +1,81 @@
+name: Bug report
+description: Report something that is not working in Grove Journal.
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a problem. Please do not include private journal entries or sensitive personal information.
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: What happened?
+      description: Briefly describe the problem.
+      placeholder: I tried to save an entry, but...
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: List the steps that led to the problem.
+      placeholder: |
+        1. Open Grove Journal
+        2. Go to...
+        3. Tap...
+        4. See...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect to happen?
+      placeholder: I expected...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - iOS
+        - Android
+        - Not sure
+    validations:
+      required: true
+
+  - type: input
+    id: app-version
+    attributes:
+      label: App version
+      description: If you can find it, include the version shown in About Grove Journal.
+      placeholder: "1.0.0"
+    validations:
+      required: false
+
+  - type: dropdown
+    id: language
+    attributes:
+      label: App language
+      options:
+        - English
+        - Spanish
+        - French
+        - German
+        - Other / not sure
+    validations:
+      required: false
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else?
+      description: Add screenshots or extra details if they help explain the issue.
+    validations:
+      required: false
